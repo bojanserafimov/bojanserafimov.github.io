@@ -1,0 +1,20 @@
+body {
+    margin: auto;
+    max-width: 100ch;
+    padding: 1ch 2ch;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+img {
+  border-radius: 4%;
+}
+
+@media(prefers-color-scheme: dark) {
+    body {
+        background-color: #333341;
+        color: #eee;
+    }
+    a {
+        color: #ff7f00;
+    }
+}
