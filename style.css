@@ -3,6 +3,7 @@ body {
     max-width: 100ch;
     padding: 1ch 2ch;
     font-family: "Lucida Console", "Courier New", monospace;
+    line-height: 150%;
 }
 
 img {
@@ -13,7 +14,6 @@ img {
     body {
         background-color: #333341;
         color: #eee;
-        line-height: 150%;
     }
     a {
         color: #ff7f00;
