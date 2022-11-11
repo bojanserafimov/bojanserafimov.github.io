@@ -2,8 +2,9 @@ body {
     margin: auto;
     max-width: 100ch;
     padding: 1ch 2ch;
-    /*font-family: "Lucida Console", "Courier New", monospace;*/
+    font-family: "Source Code Pro", "Courier New", monospace;
     line-height: 150%;
+    font-size: larger;
 }
 
 img {
@@ -25,6 +26,7 @@ input {
         color: #eee;
     }
     a {
+        font-weight: bold;
         color: #ff7f00;
     }
 
@@ -34,5 +36,6 @@ input {
 
     details[open] {
         color: #7b5;
+        /*font-weight: bold;*/
     }
 }
