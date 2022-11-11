@@ -9,16 +9,18 @@
     </head>
     <body>
         <h2>Eggs</h2>
-        <details><summary>Boil water</summary></details>
-        <details><summary>Add eggs. Don't break. Use tongs.</summary></details>
-        <details><summary>Boil 7 min</summary></details>
-        <details><summary>Put in ice water</summary></details>
-        <details><summary>Peel, cut in half</summary></details>
-        <details><summary>Season</summary></details>
+        <div class="exclusive">
+            <details><summary>Boil water</summary></details>
+            <details><summary>Add eggs. Don't break. Use tongs.</summary></details>
+            <details><summary>Boil 7 min</summary></details>
+            <details><summary>Put in ice water</summary></details>
+            <details><summary>Peel, cut in half</summary></details>
+            <details><summary>Season</summary></details>
+        </div>
 
         <script>
             // Fetch all the details element.
-            const details = document.querySelectorAll("details");
+            const details = document.querySelectorAll(".exclusive>details");
             
             // Add the onclick listeners.
             details.forEach((targetDetail) => {

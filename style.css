@@ -16,6 +16,15 @@ input {
     width: 18px;
 }
 
+hr {
+    border: 1px solid;
+    color: #665966;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+}
+
 
 @media(prefers-color-scheme: dark) {
     :root{
@@ -23,7 +32,7 @@ input {
     }
     body {
         background-color: #333341;
-        color: #eee;
+        color: #ccc;
     }
     a {
         font-weight: bold;
