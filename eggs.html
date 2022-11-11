@@ -9,12 +9,28 @@
     </head>
     <body>
         <h2>Eggs</h2>
-        <ol class="steps">
-            <li tabindex="0">Boil water</li>
-            <li tabindex="0">Add eggs, don't break. Use tongs</li>
-            <li tabindex="0">Boil for 7 min</li>
-            <li tabindex="0">Put eggs in ice water</li>
-            <li tabindex="0">Peel, cut in half, add salt+pepper</li>
-        </ol>
+        <details><summary>Boil water</summary></details>
+        <details><summary>Add eggs. Don't break. Use tongs.</summary></details>
+        <details><summary>Boil 7 min</summary></details>
+        <details><summary>Put in ice water</summary></details>
+        <details><summary>Peel, cut in half</summary></details>
+        <details><summary>Season</summary></details>
+
+        <script>
+            // Fetch all the details element.
+            const details = document.querySelectorAll("details");
+            
+            // Add the onclick listeners.
+            details.forEach((targetDetail) => {
+              targetDetail.addEventListener("click", () => {
+                // Close all the details that are not targetDetail.
+                details.forEach((detail) => {
+                  if (detail !== targetDetail) {
+                    detail.removeAttribute("open");
+                  }
+                });
+              });
+            });
+        </script>
     </body>
 </html>

@@ -15,6 +15,7 @@ input {
     width: 18px;
 }
 
+
 @media(prefers-color-scheme: dark) {
     :root{
         accent-color : #696;
@@ -27,11 +28,15 @@ input {
         color: #ff7f00;
     }
 
-    .steps {
+    details {
         color: #878;
     }
-    li:focus {
-        color: #eee;
+
+    details[open] {
+        color: #ff7f00;
     }
 
+    details > summary {
+      list-style: none;
+    }
 }
