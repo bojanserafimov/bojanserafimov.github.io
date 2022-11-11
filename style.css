@@ -21,11 +21,10 @@ hr {
     color: #665966;
 }
 
-.no-bullets>li {
-    /* Removes bullets from li */
-    display: block;
+/* Indent nested summaries */
+details > *:not(summary){
+  margin-left: 2em;
 }
-
 
 @media(prefers-color-scheme: dark) {
     :root{
