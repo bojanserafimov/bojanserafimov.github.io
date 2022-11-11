@@ -21,8 +21,9 @@ hr {
     color: #665966;
 }
 
-ul.no-bullets {
-  list-style-type: none;
+.no-bullets>li {
+    /* Removes bullets from li */
+    display: block;
 }
 
 
