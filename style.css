@@ -10,7 +10,15 @@ img {
   border-radius: 4%;
 }
 
+input {
+    height: 18px;
+    width: 18px;
+}
+
 @media(prefers-color-scheme: dark) {
+    :root{
+        accent-color : #696;
+    }
     body {
         background-color: #333341;
         color: #eee;
@@ -18,4 +26,12 @@ img {
     a {
         color: #ff7f00;
     }
+
+    .steps {
+        color: #878;
+    }
+    li:focus {
+        color: #eee;
+    }
+
 }
