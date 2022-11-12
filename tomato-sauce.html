@@ -10,43 +10,62 @@
     <body>
         <h2>Tomato Sauce</h2>
         <div class="exclusive">
-            <details><summary>Do shopping</summary>
+
+            <!-- Shopping -->
+            <details><summary>Shopping</summary>
+                <!-- Pantry -->
                 <details><summary>salt + pepper</summary></details></li>
                 <details><summary>extra virgin olive oil</summary></details></li>
-                <details><summary>1 onion</summary></details></li>
-                <details><summary>4 cloves garlic or more</summary></details></li>
                 <details><summary>Peeled canned tomatoes, san marzano</summary></details></li>
                 <details><summary>tomato paste</summary></details></li>
+                <!-- Fresh -->
+                <details><summary>1 onion</summary></details></li>
+                <details><summary>4 cloves garlic or more</summary></details></li>
                 <details><summary>maybe carrot, celery</summary></details></li>
                 <details><summary>maybe thyme, basil</summary></details></li>
             </details>
-            <details><summary>Add onion and thick layer of oil</summary></details>
-            <details><summary>Cook 10-15 min until soft. Don't smoke the oil</summary></details>
-            <details><summary>Add thin diced garlic, cook until it smells good (less than minute)</summary></details>
-            <details><summary>Add tomatos</summary></details>
-            <details><summary>Add tomato paste</summary></details>
-            <details><summary>Heat until the sauce reduces</summary></details>
-            <details><summary>Maybe add thyme, thin sliced basil, salt, pepper</summary></details>
-            <details><summary>If too sour add sugar or fat, or keep cooking on low (up to 1h is fine)</summary></details>
-            <details><summary>Eat with pasta, or grilled cheese, etc.</summary></details>
-            <details><summary>Put leftovers in jars while it's hot.</summary></details>
-        </div>
 
-        <script>
-            // Fetch all the details element.
-            const details = document.querySelectorAll(".exclusive>details");
-            
-            // Add the onclick listeners.
-            details.forEach((targetDetail) => {
-              targetDetail.addEventListener("click", () => {
-                // Close all the details that are not targetDetail.
-                details.forEach((detail) => {
-                  if (detail !== targetDetail) {
-                    detail.removeAttribute("open");
-                  }
-                });
-              });
-            });
-        </script>
+            <!-- Dishes -->
+            <details><summary>Dishes</summary>
+                <details><summary>Large pot</summary></details></li>
+                <details><summary>Wooden spoon</summary></details></li>
+                <details><summary>Jars</summary></details></li>
+            </details>
+
+            <!-- Aromatics -->
+            <details class="exclusive"><summary>Cook aromatics</summary>
+                <details><summary>Add onion and thick layer of oil</summary></details>
+                <details><summary>Cook 10-15 min until soft. Don't smoke the oil</summary></details>
+                <details><summary>Add thin diced garlic, cook until it smells good (less than minute)</summary></details>
+            </details>
+
+
+            <!-- Tomatoes -->
+            <details class="exclusive"><summary>Cook tomatoes</summary>
+                <details><summary>Add tomatoes</summary></details>
+                <details><summary>Add tomato paste</summary></details>
+                <details><summary>Heat until the sauce reduces</summary></details>
+            </details>
+
+            <!-- Testing -->
+            <details class="exclusive"><summary>Seasoning, herbs, testing</summary>
+                <details><summary>Maybe add thyme, thin sliced basil, salt, pepper</summary></details>
+                <details><summary>If too sour add sugar or fat, or keep cooking on low (up to 1h is fine)</summary></details>
+            </details>
+
+            <!-- Combos -->
+            <details class="exclusive"><summary>Good combos</summary>
+                <details><summary>Pasta</summary></details>
+                <details><summary>Grilled cheese</summary></details>
+            </details>
+
+            <details class="exclusive"><summary>Storage options</summary>
+                <details><summary>Jar while it's hot</summary></details>
+                <details><summary>Fridge for 2-3 days</summary></details>
+                <details><summary>Freeze forever</summary></details>
+            </details>
+
+        </div>
+        <script src="details.js"></script>
     </body>
 </html>
