@@ -36,7 +36,11 @@ details > *:not(summary){
     }
     a {
         font-weight: bold;
-        color: #ff7f00;
+        /* color: #ff7f00; */
+        color: #49b;
+    }
+    a:visited {
+        color: #86a;
     }
 
     details {
