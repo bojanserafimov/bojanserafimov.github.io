@@ -35,6 +35,14 @@ details > *:not(summary){
   margin-left: 2em;
 }
 
+details {
+    color: #999;
+}
+
+details[open] {
+    color: #390;
+}
+
 @media(prefers-color-scheme: dark) {
     :root{
         accent-color : #696;
