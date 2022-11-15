@@ -71,6 +71,7 @@ details[open] {
   left: 9px;
   color: #eee;
   line-height: 130%;
+  font-weight: normal;
 }
 
 @media(prefers-color-scheme: dark) {
