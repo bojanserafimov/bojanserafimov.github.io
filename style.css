@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    max-width: 100ch;
+    max-width: 80ch;
     padding: 1ch 2ch;
     font-family: "Source Code Pro", "Courier New", monospace;
     line-height: 150%;
@@ -9,6 +9,14 @@ body {
 
 img {
   border-radius: 4%;
+}
+
+h1 {
+    margin-top: 80px;
+}
+
+h2 {
+    margin-top: 60px;
 }
 
 input {
