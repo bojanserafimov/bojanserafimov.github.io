@@ -74,6 +74,15 @@ details[open] {
   font-weight: normal;
 }
 
+.top-right {
+  position: absolute;
+  top: 2px;
+  right: 9px;
+  color: #eee;
+  line-height: 130%;
+  font-weight: normal;
+}
+
 @media(prefers-color-scheme: dark) {
     :root{
         accent-color : #696;
