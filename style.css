@@ -109,7 +109,7 @@ details[open] {
   right: 105%;
 }
 
-@media(prefers-color-scheme: dark) {
+/* @media(prefers-color-scheme: dark) { */
     :root{
         accent-color : #696;
     }
@@ -118,8 +118,6 @@ details[open] {
         color: #ccc;
     }
     a {
-        font-weight: bold;
-        /* color: #ff7f00; */
         color: #49b;
     }
     a:visited {
@@ -132,6 +130,9 @@ details[open] {
 
     details[open] {
         color: #7b5;
-        /*font-weight: bold;*/
     }
-}
+
+    details[open] a {
+        color: #7b5;
+    }
+/* } */
