@@ -26,8 +26,28 @@ input {
 }
 
 hr {
+    margin: 10px;
     border: 1px solid;
-    color: #665966;
+    color: #4c4264;
+    clear: both;
+}
+
+.line {
+    width: 100%;
+    height: 15px;
+    border-bottom: 2px solid #4c4264;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    clear: both;
+}
+.line > span {
+  color: #5c5284;
+  font-size: 130%;
+  background-color: #333341;
+  padding: 0 10px;
 }
 
 /* Indent nested summaries */
