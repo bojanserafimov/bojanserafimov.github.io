@@ -43,7 +43,7 @@ hr {
     margin-right: 0px;
     clear: both;
 }
-.line > span {
+.line > h3 > span {
   color: #5c5284;
   font-size: 130%;
   background-color: #333341;
