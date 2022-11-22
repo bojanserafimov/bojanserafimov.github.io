@@ -91,9 +91,11 @@ details[open] {
   position: absolute;
   top: 10px;
   border-radius: 0px;
-    opacity: 85%;
-    width: 100%;
-    height: 128px;
+  opacity: 85%;
+  width: 100%;
+  height: 128px;
+
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Bottom left text */
@@ -113,6 +115,8 @@ details[open] {
   color: #eee;
   line-height: 130%;
   font-weight: normal;
+
+  text-shadow: 1px 0px 3px rgba(0, 0, 0, 0.7);
 }
 
 .tooltip:hover > .tooltiptext {
@@ -139,6 +143,7 @@ details[open] {
 
   top: -11px;
   right: 105%;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 /* @media(prefers-color-scheme: dark) { */
