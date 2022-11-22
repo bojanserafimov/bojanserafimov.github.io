@@ -75,6 +75,18 @@ details[open] {
   width: 128px;
 }
 
+.brown {
+  background-color: #86533f;
+}
+
+.blue {
+  background-color: #447386;
+}
+
+.green {
+  background-color: #717337;
+}
+
 .card img {
   position: absolute;
   top: 10px;
