@@ -8,6 +8,7 @@ body {
 }
 
 button {
+  margin: 2px;
   color: inherit;
   font-family: inherit;
 }
@@ -15,7 +16,8 @@ button {
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #4c4264;
+  border: 2px solid #4c4264;
+  border-radius: 8px;
 }
 
 /* Style the buttons inside the tab */
@@ -28,11 +30,12 @@ button {
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
+  border-radius: 4px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #555577;
+  background-color: #444461;
 }
 
 /* Create an active/current tablink class */
