@@ -7,6 +7,22 @@ body {
     font-size: larger;
 }
 
+h1 {
+  margin-top: 27px;
+  line-height: 120%;
+  font-size: 130%;
+}
+
+h2 {
+  line-height: 120%;
+  font-size: 120%;
+}
+
+h3 {
+  line-height: 120%;
+  font-size: 100%;
+}
+
 img {
   border-radius: 8px;
 }
