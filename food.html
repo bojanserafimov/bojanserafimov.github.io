@@ -17,15 +17,19 @@
         </p>
 
         <div class="tab">
-          <button class="tab-links" onclick="openTab(event, 'cooking')" id="defaultOpen">Cooking</button>
-          <button class="tab-links" onclick="openTab(event, 'shopping')">Shopping</button>
-          <button class="tab-links" onclick="openTab(event, 'tools')">Tools</button>
+          <button class="tab-links" onclick="openTab(event, 'cooking')" id="cooking-tab">Cooking</button>
+          <button class="tab-links" onclick="openTab(event, 'shopping')" id="shopping-tab">Shopping</button>
+          <button class="tab-links" onclick="openTab(event, 'tools')" id="tools-tab">Tools</button>
         </div>
 
         <div class="tab-content" id="shopping">
           <div style="clear: both;"></div>
           <div class="line"><h3><span>Pantry</span></h3></div>
 
+          <p class="faded">
+            Thense things last years. Buy some of each and learn how to store
+            them.
+          </p>
           <div>
             <a href="wip.html">
               <div class="card brown">
@@ -92,6 +96,11 @@
           <div style="clear: both;"></div>
           <div class="line"><h3><span>Essential</span></h3></div>
 
+          <p class="faded">
+            Always have these things and learn how to store them.
+            Even though they expire in 1-2 weeks, you'll find a way to use them.
+          </p>
+
           <div>
             <a href="eggs.html">
               <div class="card brown">
@@ -117,10 +126,21 @@
                 <div class="bottom-left">Onions</div>
               </div>
             </a>
+            <a href="wip.html">
+              <div class="card blue">
+                <img alt="Placeholder" src="placeholder.jpg"/>
+                <div class="bottom-left">Butter</div>
+              </div>
+            </a>
           </div>
 
           <div style="clear: both;"></div>
           <div class="line"><h3><span>Mood</span></h3></div>
+
+          <p class="faded">
+            Don't stock up on these without a plan to use them. If you have mushrooms
+            but you're not in the mood, they'll go bad
+          </p>
 
           <div>
             <a href="wip.html">
@@ -133,6 +153,12 @@
               <div class="card brown">
                 <img alt="Placeholder" src="placeholder.jpg"/>
                 <div class="bottom-left">Chuck Roast</div>
+              </div>
+            </a>
+            <a href="wip.html">
+              <div class="card brown">
+                <img alt="Placeholder" src="placeholder.jpg"/>
+                <div class="bottom-left">White Mushrooms</div>
               </div>
             </a>
             <a href="peppers.html">
@@ -171,12 +197,22 @@
                 <div class="bottom-left">Leeks</div>
               </div>
             </a>
+            <a href="wip.html">
+              <div class="card blue">
+                <img alt="Placeholder" src="placeholder.jpg"/>
+                <div class="bottom-left">Cheese</div>
+              </div>
+            </a>
           </div>
         </div>
 
         <div class="tab-content" id="cooking">
           <div style="clear: both;"></div>
           <div class="line"><h3><span>Level 1</span></h3></div>
+
+          <p class="faded">
+            When you have 15 min to figure out lunch and get back to work
+          </p>
 
           <!-- Level 1 -->
           <div>
@@ -208,6 +244,10 @@
 
           <div style="clear: both;"></div>
           <div class="line"><h3><span>Level 2</span></h3></div>
+
+          <p class="faded">
+            When you want something nice that's easy to make on a second try
+          </p>
 
           <!-- Level 2 -->
           <div style="clear: both;">
@@ -273,6 +313,10 @@
           <div style="clear: both;"></div>
           <div class="line"><h3><span>Level 3</span></h3></div>
 
+          <p class="faded">
+            When youre bored or adventurous. Start with a clean kitchen
+          </p>
+
           <!-- Level 3 -->
           <div style="clear: both;">
             <a href="fresh-pasta.html">
@@ -308,10 +352,16 @@
               }
               document.getElementById(tabName).style.display = "block";
               evt.currentTarget.className += " active";
+
+              localStorage.setItem('activeTab', tabName);
           }
 
-          // Get the element with id="defaultOpen" and click on it
-          document.getElementById("defaultOpen").click();
+          var activeTab = localStorage.getItem('activeTab');
+          if(activeTab){
+              document.getElementById(activeTab + "-tab").click();
+          } else {
+              document.getElementById("defaultOpen").click();
+          }
         </script>
     </body>
 </html>

@@ -107,6 +107,10 @@ hr {
   padding: 0 10px;
 }
 
+.faded {
+    color: #645c82;
+}
+
 /* Indent nested summaries */
 details > *:not(summary){
   margin-left: 2em;
@@ -145,7 +149,7 @@ details[open] {
 }
 
 .green {
-  background-color: #717337;
+  background-color: #77793c;
 }
 
 .card img {
