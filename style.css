@@ -30,10 +30,11 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 9px 6px;
   transition: 0.3s;
   font-size: 17px;
   border-radius: 4px;
+  width: 100px
 }
 
 /* Change background color of buttons on hover */
@@ -164,6 +165,8 @@ details[open] {
 }
 
 .tab-links {
+  width: 100px;
+  padding: 0px;
 }
 
 /* Bottom left text */
