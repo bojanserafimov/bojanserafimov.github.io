@@ -136,6 +136,22 @@ details[open] {
   width: 110px;
 }
 
+.hand {
+  position: fixed;
+  bottom: -140px;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+.hand .card {
+  top: 0px;
+  transition: top ease 0.2s;
+}
+
+.hand .card:hover {
+  top: -135px;
+}
+
 .brown {
   background-color: #934a39;
 }
