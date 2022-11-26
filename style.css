@@ -139,6 +139,7 @@ details[open] {
 .hand {
   position: fixed;
   bottom: -140px;
+  min-width: 360px;
   left: 50%;
   transform: translate(-50%, -0%);
 }
