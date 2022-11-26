@@ -196,13 +196,13 @@ details[open] {
 
 .top-right {
   position: absolute;
-  top: 2px;
+  top: 0px;
   right: 9px;
   color: #eee;
   line-height: 130%;
   font-weight: normal;
 
-  text-shadow: 1px 0px 3px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1.0);
 }
 
 .tooltip:hover > .tooltiptext {
