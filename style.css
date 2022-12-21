@@ -25,6 +25,7 @@ button {
 
 /* Style the buttons inside the tab */
 .tab button {
+  color: #ccc;
   background-color: inherit;
   float: left;
   border: none;
