@@ -154,7 +154,11 @@ details[open] {
 }
 
 .purple {
-  background-color: #6f5786
+  background-color: #6f5786;
+}
+
+.maybe-not {
+  opacity: 30%;
 }
 
 .card img {
