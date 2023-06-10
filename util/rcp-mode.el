@@ -105,6 +105,12 @@
             (match-string 2 line))
     nil))
 
+(defun rcp-open ()
+  "Open current recipe in browser."
+  (interactive)
+  (rcp-buffer-to-html)
+  (browse-url-of-file (rcp--generate-html-output-path)))
+
 (defun rcp-buffer-to-html ()
   "Convert this buffer to html."
   (interactive)
@@ -136,12 +142,13 @@
                       ((string-match "\\[\\(.*\\)\\]:\\s-*\\(.*\\)" line)
                        (let ((link-identifier (match-string 1 line))
                              (link-url (string-trim (match-string 2 line))))
-                         ; TODO test this
                          (with-current-buffer out-buffer
                            (goto-char (point-min))
                            (while (search-forward-regexp
                                    (concat "\\[" link-identifier "\\]\\*") nil t)
-                             (replace-match "hiii" nil nil)))
+                             (replace-match
+                              (concat "<a href=\"" link-url "\">" link-identifier "</a>")
+                              nil nil)))
                        ""))
                       ((string-empty-p line) "")
                       (t (rcp--comment-to-html line)))))
