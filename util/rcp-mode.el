@@ -160,7 +160,7 @@
       ; Insert image
       (with-current-buffer out-buffer
         (goto-char (point-min))
-        (insert (format rcp--image title image)))
+        (insert (format rcp--image title (or image "placeholder.jpg"))))
 
       ; Wrap in <body> tag
       (with-current-buffer out-buffer
